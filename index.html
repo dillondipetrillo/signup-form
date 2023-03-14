@@ -1,12 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup Form</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section class="logo-section">
+          <div class="logo-container">
+            <i class="fa-solid fa-umbrella"></i>
+            <h1>Forms</h1>
+          </div>
+        </section>
+        <section class="form-section">
+          <div class="title-section">
+            <p>
+              This is not a real online service! You know you need something
+              like this in your life to help you realize your deepest dreams.
+              Sign up
+              <span class="italic">now</span> to get started.
+            </p>
+            <p>You <span class="italic">know</span> you want to.</p>
+          </div>
+          <form action="#" method="GET" id="signup-form">
+            <section class="form-container">
+              <h2>Let's do this!</h2>
+              <div class="form-row">
+                <div class="form-item">
+                  <label for="first-name">First Name</label>
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    autocomplete="off"
+                    minlength="1"
+                    maxlength="120"
+                    required
+                  />
+                </div>
+                <div class="form-item">
+                  <label for="last-name">Last Name</label>
+                  <input
+                    type="text"
+                    name="last-name"
+                    id="last-name"
+                    autocomplete="off"
+                    minlength="1"
+                    maxlength="120"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-item">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <div class="form-item">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    autocomplete="off"
+                    pattern="(\d{3})-(\d{3})-(\d{4})"
+                    required
+                    placeholder="xxx-xxx-xxxx"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-item">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    autocomplete="off"
+                    required
+                    minlength="5"
+                  />
+                  <span class="alert"></span>
+                </div>
+                <div class="form-item">
+                  <label for="password-confirm">Confirm Password</label>
+                  <input
+                    type="password"
+                    name="password-confirm"
+                    id="password-confirm"
+                    autocomplete="off"
+                    required
+                    minlength="5"
+                  />
+                </div>
+              </div>
+            </section>
+            <div class="form-btn">
+              <button type="submit">Create Account</button>
+            </div>
+          </form>
+          <div class="have-accnt">
+            <p>Already have an account? <a href="#">Log in</a></p>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>
